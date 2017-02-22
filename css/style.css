@@ -1,0 +1,73 @@
+.center {
+    text-align: center;
+  }
+  ul {
+      list-style: none;
+      padding: 0;
+  }
+  img {
+      display: inline;
+      width: 200px;
+      height: 100px;
+  }
+  #footer {
+      width: 100%;
+      border-top: solid 2px black;
+      background-color: white;
+      position: fixed;
+      bottom: 0;
+  }
+
+.guess {
+  display: inline;
+  font-size: 60px;
+  color: #FFFAF0;
+  border: 3px solid #FFFAF0;
+  box-shadow: 1px 2px 1px #8B4513;
+  border-radius: 10%;
+  padding: 0 25px;
+}
+
+#headers {
+  width: 100%;
+}
+
+#input-parent {
+  width: 160px;
+  margin: 6% auto 40px;
+  position: relative;
+}
+
+#player-input {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  font-size: 60px;
+  color: #262626;
+}
+
+#submit {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 16px;
+  position: absolute;
+  bottom: -10px; right: -10px;
+}
+
+body {
+  background-image: url('../img/gradient-bg.jpg')
+}
+
+#app {
+  width: 60%;
+  margin: 50px auto;
+  background-color: rgba(256, 256, 256, 0.0);
+  color: #FFFAF0;
+  text-shadow: 1px 2px #8B4513;
+}
+
+#btn {
+  text-shadow: 1px 1px #8B4513;
+  box-shadow: 1px 2px 1px	#8B4513;
+}

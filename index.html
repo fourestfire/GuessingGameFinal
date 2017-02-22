@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Guessing Game</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+
+      <div id='app' class='container'>
+
+        <div id='headers' class= 'center'>
+          <!-- Title and subtitles! -->
+          <h1 id='maintitle'> Play the Guessing Game! </h1>
+          <h3 id='subtitle'> Guess a number between 1 and 100! </h3>
+        </div>
+
+        <div id='main' class= 'center'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id='player-input' class= 'center' placeholder="#" maxlength="3" autofocus>
+            <input id='submit' type="button" name="submit" value="Go!" class="btn btn-success">
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <ul>
+              <li id='guess1' class='guess'>-</li>
+              <li id='guess2' class='guess'>-</li>
+              <li id='guess3' class='guess'>-</li>
+              <li id='guess4' class='guess'>-</li>
+              <li id='guess5' class='guess'>-</li>
+            </ul>
+
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <input id='reset' type="submit" name="reset" value="Reset" class='btn btn-warning'>
+            <input id='hint' type="submit" name="hint" value="Hint" class='btn btn-info'>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class= 'center'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img src='img/fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4>powered by github.com/fourestfire</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img src='img/gh-logo.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/GuessingGame.js"></script>
+
+  </body>
+</html>
