@@ -45,17 +45,22 @@ Game.prototype.playersGuessSubmission = function(num){
   }
 }
 
+Game.prototype.addGuess = function(guess){
+  this.pastGuesses.push(guess);
+  var length = this.pastGuesses.length;
+  $('#guess' + length).text(guess);
+}
+
 Game.prototype.checkGuess = function(playersGuess){
   if (Number(playersGuess) === this.winningNumber) {
     $('#hint, #submit').prop("disabled",true)
     $('#subtitle').text('Click reset to play again!');
+    this.addGuess(playersGuess);
     return "You Win!";
   } else if (this.pastGuesses.indexOf(this.playersGuess) != -1) {
     return "You have already guessed that number.";
   } else {
-    this.pastGuesses.push(playersGuess);
-    var length = this.pastGuesses.length;
-    $('#guess' + length).text(playersGuess);
+    this.addGuess(playersGuess);
 
     if (this.pastGuesses.length === 5) {
       $('#hint, #submit').prop("disabled",true)
