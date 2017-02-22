@@ -1,3 +1,3 @@
 # GuessingGameFinal
 
-Starter project as part of Fullstack Foundations
+Starter project as part of Fullstack Foundations.

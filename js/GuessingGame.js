@@ -13,7 +13,7 @@ function shuffle(arr) {
     // Pick a remaining element…
     shuffleThisCard = Math.floor(Math.random() * unshuffledDeckSize--)
 
-    // And swap it with the current element.
+    // And swap it with the current element!
     currentCard = arr[unshuffledDeckSize];
     arr[unshuffledDeckSize] = arr[shuffleThisCard];
     arr[shuffleThisCard] = currentCard;
